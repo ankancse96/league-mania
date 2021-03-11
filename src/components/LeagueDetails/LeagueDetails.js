@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import male from '../../images/male.png';
 import female from '../../images/female.png';
-import logo from '../../images/club.jpg'
 import './LeagueDetails.css'
 import { useParams } from 'react-router';
 import {  Container } from 'react-bootstrap';
@@ -29,7 +28,7 @@ const LeagueDetails = () => {
         <div  style={{backgroundColor:"#0E0A2A",color:"#fff"}}>
             <div className="details-header">
             
-            <img src={logo} alt="error"/>
+            <img src={league.strFanart1} alt="error"/>
             <div className="header-text">
             
             <img src={league.strLogo} alt="error"/>
@@ -62,9 +61,9 @@ const LeagueDetails = () => {
             <p>{league.strDescriptionEN}</p>
             <div className="contact-link">
               
-                    <a href="https://twitter.com/"><FontAwesomeIcon icon={faTwitter} style={{fontSize:"40px",marginBottom:"10px"}}></FontAwesomeIcon></a>
-                    <a href="https://www.facebook.com/"><FontAwesomeIcon icon={faFacebook} style={{fontSize:"40px",color:"blue",marginBottom:"10px"}}></FontAwesomeIcon></a>
-                    <a href="https://www.youtube.com/"><FontAwesomeIcon icon={faYoutube} style={{fontSize:"40px",color:"red",marginBottom:"10px"}} ></FontAwesomeIcon></a>
+                    <a href={`https://${league.strTwitter}`}><FontAwesomeIcon icon={faTwitter} style={{fontSize:"40px",marginBottom:"10px"}}></FontAwesomeIcon></a>
+                    <a href={`https://${league.strFacebook}`}><FontAwesomeIcon icon={faFacebook} style={{fontSize:"40px",color:"blue",marginBottom:"10px"}}></FontAwesomeIcon></a>
+                    <a href={`https://${league.strYoutube}`}><FontAwesomeIcon icon={faYoutube} style={{fontSize:"40px",color:"red",marginBottom:"10px"}} ></FontAwesomeIcon></a>
                     
                 
             </div>
