@@ -1,0 +1,20 @@
+.header img{
+    height: 300px;
+    width: 100%;
+    
+    
+}
+.header{
+    position: relative;
+    
+}
+.header .text{
+    position: absolute;
+       color: yellow;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 40%; /* Adjust this value to move the positioned div up and down */
+        text-align: center;
+        width: 60%;
+}
