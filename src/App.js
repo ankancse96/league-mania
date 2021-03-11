@@ -9,6 +9,7 @@ import './App.css';
 
 import Home from "./components/Home/Home";
 import LeagueDetails from "./components/LeagueDetails/LeagueDetails";
+import NotFound from "./components/NotFound/NotFound";
 
 function App() {
   
@@ -23,14 +24,11 @@ function App() {
           <Route path="/league/:leagueName">
           <LeagueDetails></LeagueDetails>
           </Route>
-          <Route path="/dashboard">
-          
-          </Route>
           <Route exact path="/">
             <Home></Home>
           </Route>
           <Route path="*">
-            
+            <NotFound></NotFound>
           </Route>
         </Switch>
       
